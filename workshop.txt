@@ -1,0 +1,33 @@
+#include <str ing >
+using namespace s td ;
+// Compte l e nombre de mots dans une phrase
+fonction nombre_de_mots ( )
+{
+in t i = 0 , mots = 0;
+tantque ( i < phrase . size ( ) )
+{
+tantque ( phrase [ i ] == ’ ’ )
+i ++;
+mots++;
+tantque ( i < phrase . siz e ( ) && phrase [ i ] != ’ ’ )
+i ++;
+}
+retourner mots ;
+}
+// Retourne le nombre de voyelles d’un mot
+int nombre_de_voyelles ()
+{
+string voyelles = " aeiouyàâèéêëîïôùûœ" ;
+in t nbVoyelles = 0;
+pour( i = 0; i < mot.size( ); i ++)
+{
+voyelle = 0;
+int j = 0;
+tantque ( ! est_une_voyelle && j < voyelles . size ( ) )
+{
+voyelle = (mot [ i ] == voyelles [ j ] ) ;
+j ++;
+}
+nbVoyelles += voyelle ;
+}
+retourner nbvoyelles
